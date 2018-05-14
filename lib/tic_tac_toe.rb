@@ -138,13 +138,10 @@ def play(board)
   until over?(board) == true
     turn(board)
   end
+
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
     puts "Cats Game!"
   end
-end
-
-# def move(board, index, current_player)
-#    board[index] = current_player
 end
