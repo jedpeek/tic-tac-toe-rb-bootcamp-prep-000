@@ -7,7 +7,7 @@ WIN_COMBINATIONS = [
   [1,4,7], # M columns
   [2,5,8], # R columns
   [0,4,8], # R diagonal
-  [6,4,2],  # L diagonal
+  [6,4,2]  # L diagonal
 ]
 
 
@@ -139,10 +139,13 @@ def play(board)
   until over?(board) == true
     turn(board)
   end
-
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
     puts "Cats Game!"
   end
+end
+
+# def move(board, index, current_player)
+#    board[index] = current_player
 end
