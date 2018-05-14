@@ -145,7 +145,3 @@ def play(board)
     puts "Cats Game!"
   end
 end
-
-# def move(board, index, current_player)
-#    board[index] = current_player
-end
